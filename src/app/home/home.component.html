@@ -1,0 +1,11 @@
+<p>home works! {{headername | uppercase}}</p>
+<p *ngIf="payment>0" [style.color]="color">Salary {{payment | currency: 'INR'}}</p>
+
+<input #txt [disabled]="isDisabled"  />
+
+<button (click)="clickFunction(123)">Click</button>
+<br>
+<input #txt [value]="headername" [(ngModel)]="headername">
+<ul>
+    <li *ngFor="let color of colors">{{color}}</li>
+</ul>
